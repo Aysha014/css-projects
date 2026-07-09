@@ -6,13 +6,46 @@
 body{
     font-family:Arial, sans-serif;
     background:linear-gradient(120deg, #ffe5e5, #d9f5ff);
+    padding-top: 90px;
 }
+/* Naviagation */
+.navbar {
+    display: flex;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #0095c8;
+    z-index: 1000;
+}
+
+.logo {
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* Price card */
 .pricing-section{
     display:grid;
     grid-template-columns: repeat(3, minmax(280px, 1fr));
     gap:45px;
     width:80%;
-    margin:100px auto;
+    margin:40px auto 100px;
     align-items:center;
     justify-content: center;
 }
@@ -54,7 +87,7 @@ body{
 
 .price-card ul{
     list-style:none;
-    padding:0 35px;
+    padding:0 50px;
     margin-bottom:35px;
 }
 
@@ -126,4 +159,182 @@ body{
 .premium .line,
 .premium button{
     background:#0095c8;
+}
+
+
+/* Badge */
+.card-badge {
+    width: 500px;
+    padding: 20px;
+    background: white;
+    justify-content: center;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    flex-direction: row;
+    gap: 15px;
+    border-radius: 10px;
+    position: relative;
+    line-height: 30px;
+    box-shadow:0 7px 15px rgba(0,0,0,0.3);
+}
+.card-badge p{
+    font-size: 24px;
+    color: #0095c8;
+    font-weight: bold;
+}
+.card-badge h2{
+    font-size: 48px;
+    padding: 20px;
+}
+
+.card-badge button {
+    width: 100%;
+    height: 40px;
+    background: #0095c8;
+    color: #d9f5ff;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: red;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
+
+.card-badge img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Feature table */
+.comparison{
+
+    width:80%;
+    margin:80px auto;
+
+}
+
+.comparison h2{
+
+    text-align:center;
+    margin-bottom:30px;
+    font-size:45px;
+
+}
+
+table{
+
+    width:100%;
+    border-collapse:collapse;
+
+}
+
+th,
+td{
+
+    padding:15px;
+    text-align:center;
+    border:1px solid #ddd;
+
+}
+
+tbody td:first-child{
+
+    text-align:left;
+    font-weight:bold;
+
+}
+
+.basic-head{
+
+    background:#ff7b4a;
+    color:white;
+
+}
+
+.standard-head{
+
+    background:#ff3c78;
+    color:white;
+
+}
+
+.premium-head{
+
+    background:#0095c8;
+    color:white;
+
+}
+
+tbody tr:nth-child(even){
+
+    background:#f3f3f3;
+
+}
+
+tbody tr:nth-child(odd){
+
+    background:#ffffff;
+
+}
+
+/* Contact Bar */
+.contact-bar{
+
+    position:fixed;
+
+    bottom:0;
+
+    left:0;
+
+    width:100%;
+
+    background:#11141f;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:15px 40px;
+
+    box-shadow:0 -5px 15px rgba(0,0,0,.3);
+
+    z-index:1000;
+
+}
+
+.contact-bar button{
+
+    background:#0095c8;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 25px;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:bold;
+
 }
